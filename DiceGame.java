@@ -4,10 +4,6 @@ import java.util.Random;
 class DiceGame {
     public static void main(String args[])
     {
-       // System.out.print("Enter the number of dice: ");
-
-        // Scanner input = new Scanner(System.in);
-        // int numberOfDice = input.nextInt();
 
         Random ranNum = new Random();
 
@@ -24,5 +20,8 @@ class DiceGame {
         }
 
         System.out.println("Total value: " + total);
+
+        if(total > 7)System.out.println("You won!");
+        else System.out.println("You lost.");
     }
 }
