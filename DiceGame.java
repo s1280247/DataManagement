@@ -1,10 +1,19 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 import java.util.Random;
 
 class DiceGame {
     public static void main(String args[])
     {
+        //Greeting
+        System.out.println("What is your name?");
+        System.out.print(">");
 
+        Scanner input = new Scanner(System.in);
+        String name = input.next();
+
+        System.out.println("Hello, "+name+"!");
+
+        //Rolling the dice
         Random ranNum = new Random();
 
         System.out.println("Rolling dice...");
@@ -21,7 +30,7 @@ class DiceGame {
 
         System.out.println("Total value: " + total);
 
-        if(total > 7)System.out.println("You won!");
-        else System.out.println("You lost.");
+        if(total > 7)System.out.println(name+" won!");
+        else System.out.println(name+" lost.");
     }
 }
