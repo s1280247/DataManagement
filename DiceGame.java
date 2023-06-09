@@ -1,14 +1,19 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 import java.util.Random;
 
 class DiceGame {
     public static void main(String args[])
     {
-       // System.out.print("Enter the number of dice: ");
+        //Greeting
+        System.out.println("What is your name?");
+        System.out.print(">");
 
-        // Scanner input = new Scanner(System.in);
-        // int numberOfDice = input.nextInt();
+        Scanner input = new Scanner(System.in);
+        String name = input.next();
 
+        System.out.println("Hello, "+name+"!");
+
+        //Rolling the dice
         Random ranNum = new Random();
 
         System.out.println("Rolling dice...");
